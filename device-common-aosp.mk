@@ -17,6 +17,9 @@
 # ConnectivityThermalPowermanager
 include hardware/google/pixel/connectivity_thermal_power_manager/connectivity_thermal_power_manager.mk
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # EUICC
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
