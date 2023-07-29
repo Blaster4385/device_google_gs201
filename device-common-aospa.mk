@@ -40,6 +40,10 @@ DEVICE_MANIFEST_FILE += \
 # Properties
 TARGET_VENDOR_PROP := device/google/gs201/vendor.prop
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     packages/modules/Bluetooth/android/app
