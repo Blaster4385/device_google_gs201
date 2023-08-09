@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2023 PixelBlaster-OS
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libinit_gs201",
+    recovery_available: true,
+    shared_libs: ["libbase"],
+    srcs: ["init_gs201.cpp"],
+}
