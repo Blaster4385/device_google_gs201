@@ -30,3 +30,6 @@ PRODUCT_COPY_FILES += \
 # Telephony
 PRODUCT_PACKAGES += \
     TelephonyOverlay
+
+# Wireless Charger
+include device/google/gs-common/wireless_charger/wireless_charger.mk
