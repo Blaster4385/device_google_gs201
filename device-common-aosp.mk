@@ -36,6 +36,10 @@ TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 # Recorder
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Scudo
 PRODUCT_USE_SCUDO := true
 
