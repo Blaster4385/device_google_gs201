@@ -234,9 +234,9 @@ $(call soong_config_set,aoc_audio_func,hal_socket_control,true)
 $(call soong_config_set,aoc_audio_func,record_tunning_keys,true)
 endif
 
-ifneq (,$(filter aosp_%,$(TARGET_PRODUCT)))
-$(call soong_config_set,aoc_audio_func,aosp_build,true)
-endif
+# ifneq (,$(filter aosp_%,$(TARGET_PRODUCT)))
+# $(call soong_config_set,aoc_audio_func,aosp_build,true)
+# endif
 
 # Primary AudioHAL Configuration
 #BOARD_USE_COMMON_AUDIOHAL := true

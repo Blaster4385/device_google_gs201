@@ -27,9 +27,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
+# NGA
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
+# Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Scudo
+PRODUCT_USE_SCUDO := true
+
 # Telephony
 PRODUCT_PACKAGES += \
     TelephonyOverlay
+
+# Touch
+include hardware/google/pixel/touch/device.mk
 
 # Wireless Charger
 include device/google/gs-common/wireless_charger/wireless_charger.mk
